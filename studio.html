@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Book Your Session | The Nocturnal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#474746",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-container": "#201f1f",
+                        "tertiary-container": "#b2b3b3",
+                        "secondary": "#c8c6c5",
+                        "primary-fixed": "#ffe088",
+                        "inverse-surface": "#e5e2e1",
+                        "inverse-primary": "#735c00",
+                        "surface-tint": "#e9c349",
+                        "surface-dim": "#131313",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-background": "#e5e2e1",
+                        "surface-container-highest": "#353534",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "surface": "#131313",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-secondary": "#313030",
+                        "outline-variant": "#4d4635",
+                        "surface-container-lowest": "#0e0e0e",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-primary-fixed-variant": "#574500",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "error-container": "#93000a",
+                        "surface-variant": "#353534",
+                        "surface-container-high": "#2a2a2a",
+                        "primary": "#f2ca50",
+                        "on-error-container": "#ffdad6",
+                        "inverse-on-surface": "#313030",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-primary": "#3c2f00",
+                        "error": "#ffb4ab",
+                        "surface-bright": "#3a3939",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-secondary-container": "#b7b5b4",
+                        "on-primary-container": "#554300",
+                        "tertiary": "#cecece",
+                        "on-surface-variant": "#d0c5af",
+                        "secondary-fixed": "#e5e2e1",
+                        "primary-container": "#d4af37",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "on-surface": "#e5e2e1",
+                        "on-primary-fixed": "#241a00",
+                        "on-tertiary": "#2f3131",
+                        "on-tertiary-container": "#444546",
+                        "on-error": "#690005",
+                        "outline": "#99907c",
+                        "background": "#131313"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #131313; color: #e5e2e1; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .glass-panel { background: rgba(32, 31, 31, 0.7); backdrop-filter: blur(24px); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary/30">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-950/70 backdrop-blur-xl shadow-[0_0_48px_rgba(212,175,55,0.06)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-serif italic text-yellow-500 tracking-tighter" href="#">The Nocturnal</a>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-neutral-400 hover:text-neutral-100 transition-colors duration-300 font-medium text-[0.6875rem] uppercase tracking-widest" href="#">Studios</a>
+<a class="text-neutral-400 hover:text-neutral-100 transition-colors duration-300 font-medium text-[0.6875rem] uppercase tracking-widest" href="#">Artists</a>
+<a class="text-yellow-500 border-b-2 border-yellow-500 pb-1 font-medium text-[0.6875rem] uppercase tracking-widest" href="#">Bookings</a>
+<a class="text-neutral-400 hover:text-neutral-100 transition-colors duration-300 font-medium text-[0.6875rem] uppercase tracking-widest" href="#">Profile</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-neutral-400 cursor-pointer hover:text-primary transition-all">account_circle</span>
+<button class="bg-primary text-on-primary px-6 py-2.5 font-bold text-xs uppercase tracking-widest hover:brightness-110 active:scale-95 transition-all">Book Now</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-screen-2xl mx-auto min-h-screen">
+<!-- Header Section -->
+<header class="mb-16">
+<h1 class="text-5xl md:text-7xl font-serif font-bold text-on-surface tracking-tight mb-4 max-w-3xl">Secure Your Space In <span class="italic text-primary">The Void</span></h1>
+<p class="text-neutral-400 text-lg max-w-xl font-light leading-relaxed">Tailored environments for sonic architects. Select your session type and time to begin the ritual.</p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Booking Configuration (Left Column) -->
+<div class="lg:col-span-8 space-y-12">
+<!-- Session Type Selection -->
+<section>
+<h3 class="font-medium text-[0.6875rem] uppercase tracking-[0.2em] text-primary mb-8">01. Select Session Type</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Studio Session -->
+<div class="group relative p-8 bg-surface-container-low hover:bg-surface-container transition-all cursor-pointer ring-1 ring-white/5 hover:ring-primary/30">
+<div class="flex justify-between items-start mb-12">
+<span class="material-symbols-outlined text-4xl text-primary/60 group-hover:text-primary transition-colors">mic_external_on</span>
+<span class="text-xs font-bold tracking-widest text-primary/40">$120/hr</span>
+</div>
+<h4 class="text-2xl font-serif mb-2">Studio Session</h4>
+<p class="text-sm text-neutral-500 leading-relaxed">Full access to the analog rack, vocal booth, and mastering monitors.</p>
+<div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+</div>
+</div>
+<!-- DJ Performance -->
+<div class="group relative p-8 bg-primary ring-1 ring-primary transition-all cursor-pointer">
+<div class="flex justify-between items-start mb-12">
+<span class="material-symbols-outlined text-4xl text-on-primary">graphic_eq</span>
+<span class="text-xs font-bold tracking-widest text-on-primary/60">$85/hr</span>
+</div>
+<h4 class="text-2xl font-serif mb-2 text-on-primary">DJ Performance</h4>
+<p class="text-sm text-on-primary/70 leading-relaxed">NXS2 setup with integrated live-streaming and recording capabilities.</p>
+<div class="absolute bottom-4 right-4">
+<span class="material-symbols-outlined text-on-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Integrated Calendar -->
+<section>
+<h3 class="font-medium text-[0.6875rem] uppercase tracking-[0.2em] text-primary mb-8">02. Choose Date &amp; Time</h3>
+<div class="bg-surface-container-low p-8 ring-1 ring-white/5">
+<div class="flex flex-col md:flex-row gap-12">
+<!-- Calendar Grid -->
+<div class="flex-1">
+<div class="flex items-center justify-between mb-8">
+<h5 class="font-serif text-xl">December 2024</h5>
+<div class="flex gap-4">
+<button class="material-symbols-outlined text-neutral-500 hover:text-white">chevron_left</button>
+<button class="material-symbols-outlined text-neutral-500 hover:text-white">chevron_right</button>
+</div>
+</div>
+<div class="grid grid-cols-7 gap-2 text-center text-[0.625rem] font-bold text-neutral-600 mb-4 uppercase tracking-tighter">
+<span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+</div>
+<div class="grid grid-cols-7 gap-2">
+<!-- Simplified Calendar Logic -->
+<div class="aspect-square flex items-center justify-center text-neutral-800 text-sm">25</div>
+<div class="aspect-square flex items-center justify-center text-neutral-800 text-sm">26</div>
+<div class="aspect-square flex items-center justify-center text-neutral-800 text-sm">27</div>
+<div class="aspect-square flex items-center justify-center text-neutral-800 text-sm">28</div>
+<div class="aspect-square flex items-center justify-center text-neutral-800 text-sm">29</div>
+<div class="aspect-square flex items-center justify-center text-neutral-800 text-sm">30</div>
+<div class="aspect-square flex items-center justify-center text-neutral-100 text-sm">1</div>
+<!-- Active Day -->
+<div class="aspect-square flex items-center justify-center text-on-primary bg-primary font-bold text-sm">12</div>
+<!-- Range ... -->
+<div class="col-span-7 grid grid-cols-7 gap-2">
+<script>
+                                            for(let i=2; i<=21; i++) {
+                                                const isActive = i === 12;
+                                                document.write(`<div class="aspect-square flex items-center justify-center ${i < 5 ? 'text-neutral-600' : 'text-neutral-300 hover:bg-white/5 cursor-pointer'} text-sm">${i}</div>`);
+                                            }
+                                        </script>
+</div>
+</div>
+</div>
+<!-- Time Slots -->
+<div class="w-full md:w-64 space-y-4">
+<h5 class="text-sm font-medium text-neutral-400 mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">schedule</span>
+                                    Available Windows
+                                </h5>
+<div class="grid grid-cols-2 md:grid-cols-1 gap-3 max-h-72 overflow-y-auto no-scrollbar pr-2">
+<button class="py-3 px-4 text-xs font-bold text-neutral-400 border border-neutral-800 hover:border-primary/50 transition-all uppercase tracking-widest">10:00 PM</button>
+<button class="py-3 px-4 text-xs font-bold text-on-primary bg-primary uppercase tracking-widest">12:00 AM</button>
+<button class="py-3 px-4 text-xs font-bold text-neutral-400 border border-neutral-800 hover:border-primary/50 transition-all uppercase tracking-widest">02:00 AM</button>
+<button class="py-3 px-4 text-xs font-bold text-neutral-400 border border-neutral-800 hover:border-primary/50 transition-all uppercase tracking-widest">04:00 AM</button>
+<button class="py-3 px-4 text-xs font-bold text-neutral-600 border border-neutral-800/30 cursor-not-allowed uppercase tracking-widest line-through">06:00 AM</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Equipment & Add-ons -->
+<section>
+<h3 class="font-medium text-[0.6875rem] uppercase tracking-[0.2em] text-primary mb-8">03. Performance Enhancements</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<label class="flex items-center gap-4 p-4 bg-surface-container-lowest ring-1 ring-white/5 cursor-pointer hover:ring-primary/20 transition-all">
+<input checked="" class="w-4 h-4 rounded-none border-neutral-700 bg-surface-container text-primary focus:ring-primary" type="checkbox"/>
+<div>
+<p class="text-sm font-medium">Engineer Assistance</p>
+<p class="text-[0.625rem] text-primary">+$40/hr</p>
+</div>
+</label>
+<label class="flex items-center gap-4 p-4 bg-surface-container-lowest ring-1 ring-white/5 cursor-pointer hover:ring-primary/20 transition-all">
+<input class="w-4 h-4 rounded-none border-neutral-700 bg-surface-container text-primary focus:ring-primary" type="checkbox"/>
+<div>
+<p class="text-sm font-medium">Live Stream Pack</p>
+<p class="text-[0.625rem] text-primary">+$25 (Flat)</p>
+</div>
+</label>
+<label class="flex items-center gap-4 p-4 bg-surface-container-lowest ring-1 ring-white/5 cursor-pointer hover:ring-primary/20 transition-all">
+<input class="w-4 h-4 rounded-none border-neutral-700 bg-surface-container text-primary focus:ring-primary" type="checkbox"/>
+<div>
+<p class="text-sm font-medium">Recording Export</p>
+<p class="text-[0.625rem] text-primary">Free</p>
+</div>
+</label>
+</div>
+</section>
+</div>
+<!-- Sticky Summary & Checkout (Right Column) -->
+<aside class="lg:col-span-4 lg:sticky lg:top-32 space-y-6">
+<div class="glass-panel p-8 shadow-[0_32px_64px_-12px_rgba(0,0,0,0.5)] relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-3xl -translate-y-16 translate-x-16"></div>
+<h4 class="font-serif text-2xl mb-8">Reservation Summary</h4>
+<div class="space-y-6 mb-12">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-[0.625rem] font-bold text-neutral-500 uppercase tracking-widest mb-1">Session</p>
+<p class="font-medium">DJ Performance</p>
+</div>
+<p class="text-sm">$170.00</p>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<p class="text-[0.625rem] font-bold text-neutral-500 uppercase tracking-widest mb-1">Schedule</p>
+<p class="font-medium">Dec 12, 12:00 AM — 02:00 AM</p>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<p class="text-[0.625rem] font-bold text-neutral-500 uppercase tracking-widest mb-1">Enhancements</p>
+<p class="font-medium text-sm text-neutral-400">Engineer Assistance (2hr)</p>
+</div>
+<p class="text-sm">$80.00</p>
+</div>
+</div>
+<div class="border-t border-white/5 pt-6 space-y-4">
+<div class="flex justify-between items-center text-neutral-400">
+<span class="text-xs uppercase tracking-widest">Subtotal</span>
+<span class="text-sm">$250.00</span>
+</div>
+<div class="flex justify-between items-center text-neutral-400">
+<span class="text-xs uppercase tracking-widest">Service Fee</span>
+<span class="text-sm">$12.50</span>
+</div>
+<div class="flex justify-between items-center pt-4">
+<span class="text-lg font-serif">Total Amount</span>
+<span class="text-2xl font-serif text-primary">$262.50</span>
+</div>
+</div>
+<button class="w-full mt-10 bg-primary py-5 text-on-primary font-extrabold text-xs uppercase tracking-[0.3em] shadow-[0_20px_40px_-10px_rgba(242,202,80,0.3)] hover:shadow-primary/40 hover:-translate-y-0.5 transition-all active:scale-95 flex items-center justify-center gap-3">
+                        Proceed to Payment
+                        <span class="material-symbols-outlined text-sm">lock</span>
+</button>
+<p class="text-center mt-6 text-[0.625rem] text-neutral-600 font-medium tracking-wide">
+                        30-MINUTE GRACE PERIOD APPLIES TO ALL BOOKINGS
+                    </p>
+</div>
+<!-- Artist Support Info -->
+<div class="bg-surface-container-low p-6 ring-1 ring-white/5 flex gap-4 items-center">
+<img class="w-12 h-12 object-cover grayscale" data-alt="Close up of professional audio mixing console with glowing amber lights and sliding faders in a dark studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4ahdEpSwmypIVjEQ0CK-CzAFcW1ERjkN4pqc7ikkClDr1JwXfDb1fiCvH0KneRm2kzgm2rSITItr7SkLDKKBc1IICXLFs77u0rhhB6PsCzODk32LU3yXXkoa6TpyFLfsDZA-M9CzMVvitlB614Kg_fs6OI6ErrF1ktTfVYchcd1R_yaJKueBGW2kNjMpj9Ro-KW7Qcay40L1e21JI5Rj-C9oGG5XCCxciAs9O6Q2hYV9zTWHfr3LKEkr0oxYPyPMlVKCG9WIh88FF"/>
+<div>
+<p class="text-xs font-bold text-primary mb-1">NEED HELP?</p>
+<p class="text-[0.6875rem] text-neutral-400 leading-tight">Chat with a Studio Liaison for specialized technical requirements.</p>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Visual Divider -->
+<div class="h-px w-full bg-gradient-to-r from-transparent via-yellow-500/10 to-transparent"></div>
+<!-- Footer -->
+<footer class="bg-neutral-950 w-full py-16 px-8 border-t border-yellow-500/10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start max-w-screen-2xl mx-auto">
+<div class="space-y-6">
+<h2 class="text-xl font-serif text-yellow-500">The Nocturnal</h2>
+<p class="text-neutral-500 text-sm leading-relaxed max-w-xs">A sanctuary for high-fidelity experimentation. Built by artists, for artists.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="space-y-4">
+<h5 class="font-serif text-neutral-300 text-sm">Explore</h5>
+<ul class="space-y-2 text-xs font-medium tracking-wide">
+<li><a class="text-neutral-500 hover:text-yellow-500 transition-colors duration-200" href="#">Studios</a></li>
+<li><a class="text-neutral-500 hover:text-yellow-500 transition-colors duration-200" href="#">Artists</a></li>
+<li><a class="text-yellow-500 font-bold" href="#">Bookings</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-serif text-neutral-300 text-sm">Legal</h5>
+<ul class="space-y-2 text-xs font-medium tracking-wide">
+<li><a class="text-neutral-500 hover:text-yellow-500 transition-colors duration-200" href="#">Privacy Policy</a></li>
+<li><a class="text-neutral-500 hover:text-yellow-500 transition-colors duration-200" href="#">Terms of Service</a></li>
+<li><a class="text-neutral-500 hover:text-yellow-500 transition-colors duration-200" href="#">Studio Guidelines</a></li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col items-end gap-6">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-neutral-500 hover:text-yellow-500 hover:scale-110 transition-all cursor-pointer">rss_feed</span>
+<span class="material-symbols-outlined text-neutral-500 hover:text-yellow-500 hover:scale-110 transition-all cursor-pointer">podcasts</span>
+<span class="material-symbols-outlined text-neutral-500 hover:text-yellow-500 hover:scale-110 transition-all cursor-pointer">near_me</span>
+</div>
+<p class="text-[0.6875rem] text-neutral-600 uppercase tracking-widest">© 2024 THE NOCTURNAL. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+</footer>
+</body></html>

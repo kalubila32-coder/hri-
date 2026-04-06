@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Nocturnal | High-End Editorial Studio &amp; Artist Collective</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#474746",
+                    "surface-container-low": "#1c1b1b",
+                    "surface-container": "#201f1f",
+                    "tertiary-container": "#b2b3b3",
+                    "secondary": "#c8c6c5",
+                    "primary-fixed": "#ffe088",
+                    "inverse-surface": "#e5e2e1",
+                    "inverse-primary": "#735c00",
+                    "surface-tint": "#e9c349",
+                    "surface-dim": "#131313",
+                    "on-secondary-fixed-variant": "#474746",
+                    "on-background": "#e5e2e1",
+                    "surface-container-highest": "#353534",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "surface": "#131313",
+                    "tertiary-fixed": "#e2e2e2",
+                    "on-secondary": "#313030",
+                    "outline-variant": "#4d4635",
+                    "surface-container-lowest": "#0e0e0e",
+                    "primary-fixed-dim": "#e9c349",
+                    "on-primary-fixed-variant": "#574500",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "error-container": "#93000a",
+                    "surface-variant": "#353534",
+                    "surface-container-high": "#2a2a2a",
+                    "primary": "#f2ca50",
+                    "on-error-container": "#ffdad6",
+                    "inverse-on-surface": "#313030",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-primary": "#3c2f00",
+                    "error": "#ffb4ab",
+                    "surface-bright": "#3a3939",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "on-secondary-container": "#b7b5b4",
+                    "on-primary-container": "#554300",
+                    "tertiary": "#cecece",
+                    "on-surface-variant": "#d0c5af",
+                    "secondary-fixed": "#e5e2e1",
+                    "primary-container": "#d4af37",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "on-surface": "#e5e2e1",
+                    "on-primary-fixed": "#241a00",
+                    "on-tertiary": "#2f3131",
+                    "on-tertiary-container": "#444546",
+                    "on-error": "#690005",
+                    "outline": "#99907c",
+                    "background": "#131313"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #131313; color: #e5e2e1; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glow-hover:hover { box-shadow: 0 0 20px rgba(242, 202, 80, 0.2); border-color: rgba(242, 202, 80, 0.3); }
+        .editorial-grid { display: grid; grid-template-columns: repeat(12, 1fr); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-950/70 backdrop-blur-xl shadow-[0_0_48px_rgba(212,175,55,0.06)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-yellow-500 tracking-tighter">The Nocturnal</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-yellow-500 border-b-2 border-yellow-500 pb-1 Manrope uppercase tracking-widest text-[0.6875rem] font-medium" href="#">Studios</a>
+<a class="text-neutral-400 hover:text-neutral-100 transition-colors duration-300 Manrope uppercase tracking-widest text-[0.6875rem] font-medium" href="#">Artists</a>
+<a class="text-neutral-400 hover:text-neutral-100 transition-colors duration-300 Manrope uppercase tracking-widest text-[0.6875rem] font-medium" href="#">Bookings</a>
+<a class="text-neutral-400 hover:text-neutral-100 transition-colors duration-300 Manrope uppercase tracking-widest text-[0.6875rem] font-medium" href="#">Profile</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="bg-primary text-on-primary px-6 py-2 text-[0.6875rem] uppercase tracking-widest font-bold hover:bg-primary-container transition-all active:scale-95 duration-300">Book Now</button>
+<span class="material-symbols-outlined text-neutral-400 cursor-pointer hover:text-yellow-500 transition-colors">account_circle</span>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section: The Void and The Glow -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-40 grayscale hover:grayscale-0 transition-all duration-1000" data-alt="cinematic wide shot of a dimly lit high-end music studio with gold ambient lighting and professional vintage mixing console" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHdb9jmL1PDZbHWt0z8rX85Bl9l23969jh_HxVLSta1L_MiyjBihn8XOUjpspW-UlxGQhdWA-DyEQUI4pxIoTtFKaSSPOYbN5AKsvLcmmXsv_QdSf2OLOWH2g4JGBUQJcHf6s23dK3F-QPylxKIee7TYGVF4pIvuQJCXtRijIPTA5Eppxm4P7HsGWKFnDCPQqY3RNDKA7irAuLQHnKyy1JM5my84xOhrhTYDtcbBiI8y9D3BhUJDlJCYuZgnCMDUzlIX9AG0V_2qg6"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-screen-2xl mx-auto px-8 w-full">
+<div class="max-w-4xl">
+<span class="inline-block label-sm uppercase tracking-[0.3em] text-primary mb-6 animate-pulse">Established in Sound</span>
+<h1 class="font-serif text-6xl md:text-8xl lg:text-9xl -ml-1 leading-[0.9] tracking-tighter mb-8 italic">
+                        The <span class="text-primary not-italic">Sonic</span><br/>Curator.
+                    </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl mb-12 font-body leading-relaxed opacity-90">
+                        A sanctuary for high-end audio production. We blend vintage analog heritage with the precision of modern electronic curation.
+                    </p>
+<div class="flex flex-wrap gap-6">
+<button class="px-10 py-5 bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold uppercase tracking-widest text-xs hover:scale-105 transition-transform duration-300">
+                            Book a Session
+                        </button>
+<button class="px-10 py-5 border border-outline-variant/30 text-on-surface font-bold uppercase tracking-widest text-xs hover:border-primary transition-colors duration-300 backdrop-blur-sm">
+                            Explore Artists
+                        </button>
+</div>
+</div>
+</div>
+<!-- Asymmetric Floating Element -->
+<div class="absolute bottom-12 right-8 hidden lg:block max-w-sm">
+<div class="bg-surface-container/70 backdrop-blur-2xl p-8 border-l-2 border-primary">
+<div class="flex items-center gap-4 mb-4">
+<div class="h-12 w-12 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close up of a professional DJ artist with headphones in a dark moody studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK9jpO-B4wJF2-P_kpwmXh4l7yeXZd7wSas7YrN21bZxqnIZBbmSw7XgRel7cPbON6u8Lt8MfqfzuicUqyu-6u4a4BrSgpR6575ALm9z46cs0RujJ2TT5QacNPm9HwrZVv385bu66E30QUhf3n8DVrUjnNi9DNCxyRAuJcgaAKuw9lzX2g0xAkR56iCYsnrZ7KNDjnu7eDnbjbrt4rDo_48dGxpJ8e3mcJfTSuOVz0RT8oZeAbY6ivlgLz14ZUnalRjvccnFK2RWyp"/>
+</div>
+<div>
+<span class="block label-sm text-primary">Now Live</span>
+<span class="block font-serif italic">The Analog Hour</span>
+</div>
+</div>
+<div class="h-[2px] bg-surface-container-highest w-full relative">
+<div class="absolute inset-y-0 left-0 bg-primary w-2/3"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Curated Services Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-serif text-5xl mb-6">Unrivaled Facilities</h2>
+<p class="text-on-surface-variant leading-relaxed">Our spaces are acoustically engineered environments designed to disappear, leaving only the purity of the performance. We provide more than equipment; we provide atmosphere.</p>
+</div>
+<div class="label-sm tracking-widest text-primary border-b border-primary/20 pb-2 cursor-pointer hover:text-primary-fixed transition-colors">VIEW ALL STUDIOS</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service Card 1 -->
+<div class="group relative overflow-hidden bg-surface-container-low p-1 transition-all duration-500 hover:bg-surface-container-high">
+<div class="aspect-[4/5] overflow-hidden mb-8">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" data-alt="luxury music studio with high end modular synthesizers and warm wooden acoustic panels" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvaUFODkInpn_vp83VyZaiNVf2gFhaSpY6loUw1YbEvK_oZ9ge25nsSqJb3GRCyrvC2JnWh8DDDmwrR_YaSFZZ2p9vQca5Rmc82RKjhZXOvh3ddK-x-5P1a1gfQnxO6OlKwrPXnt4Dt3NLFDcPYnBlO6HtEilPcfxbf82bz0nQ83UMHZppDGZZGgMVyS6dTzZhz1STYsWTSC8GlrWRCOHMaAEPrLRi4EDz83RDMEkl6ZYyNHsqhBZtjc3FiAcbCxU6Du-CGht2jq-E"/>
+</div>
+<div class="px-6 pb-10">
+<span class="label-sm text-primary mb-2 block">STUDIO ALPHA</span>
+<h3 class="font-serif text-2xl mb-4 italic">The Master Suite</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">48-channel Neve console, private lounge, and world-class monitoring.</p>
+<span class="material-symbols-outlined text-primary text-3xl">arrow_right_alt</span>
+</div>
+</div>
+<!-- Service Card 2 (Offset) -->
+<div class="group relative overflow-hidden bg-surface-container-low p-1 md:translate-y-12 transition-all duration-500 hover:bg-surface-container-high">
+<div class="aspect-[4/5] overflow-hidden mb-8">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" data-alt="modern dance music production space with purple and gold neon lighting and professional speakers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWN9p-JALWlStIhl63KA1OWHIwxxwOEpzAsFdIr4k_erLdQ9TaZkfj8fC8g3vq625--My5w3TPYz1amAAgktyAo4sF_To9wQQ4iaEi5vNk0S0sVNN6xnGmVCqJ-1Tq4XHFdEs_hfCnZJZMvB5c-uWwcMOZ2r0VB532pq0neVlNllZMco17k_qQiN68HmJqcQ7a59CpGJmh59oMi7YmgNg8df71KWB6g5_T7aU7MwIPvF2aCZZfOHpurixZAX6m2nFuRaQNkBQALDhq"/>
+</div>
+<div class="px-6 pb-10">
+<span class="label-sm text-primary mb-2 block">LAB 01</span>
+<h3 class="font-serif text-2xl mb-4 italic">The Electronic Lab</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Optimized for low-end precision. Perfect for sound design and mixing.</p>
+<span class="material-symbols-outlined text-primary text-3xl">arrow_right_alt</span>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="group relative overflow-hidden bg-surface-container-low p-1 transition-all duration-500 hover:bg-surface-container-high">
+<div class="aspect-[4/5] overflow-hidden mb-8">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0" data-alt="vocal recording booth with vintage microphone and golden acoustic treatment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy4XVHUOqtxnlixcNwbaKqN5Wz8lp6t8kcaujC_jiJZ7-6PQ54w4S-iI75lni5fS3M7EFGcqSTDbQo-8cBK4IuAxK4vUoi_vS04EonKblFcoZAAwkxka1v_u8CuZ-FYhbDOmXOwCFEFpSsAv4-3dvtCN2bAx6ClYozW7-Adkm7Cn2d79TR13nAvqcGCREv_RD0pYql02Y3fDU_Owl8zJUtOjlJPog5aUeGGtfhuaxSebLFYNKDqESxEZxkcd2dpIpWtNqI2e8_AeAt"/>
+</div>
+<div class="px-6 pb-10">
+<span class="label-sm text-primary mb-2 block">VOCAL BOOTH</span>
+<h3 class="font-serif text-2xl mb-4 italic">The Whisper Room</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Isolation perfection. Capture the raw emotion of every take.</p>
+<span class="material-symbols-outlined text-primary text-3xl">arrow_right_alt</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Elite Artists (Bento Grid Style) -->
+<section class="py-32 bg-surface-container-lowest">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="text-center mb-24">
+<h2 class="font-serif text-5xl lg:text-7xl mb-4">Elite Artists</h2>
+<p class="label-sm tracking-[0.5em] text-primary uppercase">The Nocturnal Collective</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[1000px] md:h-[800px]">
+<!-- Main Artist -->
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="portrait of a high-fashion techno DJ in a leather jacket under dramatic yellow spotlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUoYV_oVy9wEldnOCwp6i82dwxv-ZzU0DoFmk-2dW551JbcW-nq-hNtcKWMv9SgZsO3178HfeSTOki8FBkoWpGbLYosMDY_q54JDYaRPR_QGE78HBZa2HdsUv98xZqNsJHtu4X3WiRFetiFr9eN7bgduHTdoWbl6xH4Bw5Ryi-ySUdls5q_hw4TTF13cRBBH4KQMOtryw2bDrhH-3RmwgPizv8AawH66qMB4ftFdNaiDHEbxYYgUfVKPzD2H3VfXTY9ixDK6YjJ9dU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-12">
+<span class="label-sm text-primary mb-4 block">TECHNO / INDUSTRIAL</span>
+<h3 class="font-serif text-4xl italic mb-2">Elena Vora</h3>
+<p class="text-on-surface-variant max-w-sm">Resident at Berlin's most exclusive underground venues.</p>
+</div>
+</div>
+<!-- Side Artist 1 -->
+<div class="relative group overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all" data-alt="close up of hands on a vinyl turntable in a dark club environment with gold light flares" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdHn9DoJgS4qN9hLmYjmIoOdEx7IMH6buY9C8SZPxPRraGjwxGq4kaVHddlUh_36Tf2UAcgzQra-mP6b3GCJ9ll3CbyFI6qlB94gjj8tcE2It3QwyfOzH22oH8f0hG7vkb6DY4YKvlH_BRL0xhzEB5Db5p5vO9XK-qXapNrjXdYl25JXvfxPMnCR3hbKW1Lyvmxc77UdvaTJGlXbcCBYBFBLzOcSRzv6CamgH9vX_vNGlgF4toumSW087-r7WW3Y3maOT7YPo6-bis"/>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<h3 class="font-serif text-2xl italic">Julian Grey</h3>
+<span class="label-sm text-primary">DEEP HOUSE</span>
+</div>
+</div>
+<!-- Side Artist 2 -->
+<div class="relative group overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all" data-alt="abstract image of a DJ performance with blurred gold stage lights and high contrast shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPTvKHkgdJEgCh-EQhUHmEviVCuFvQO2L8GFRbDRN6ERX0IxyRbZ-rwgkM6zg3rxLbJP4PEzW4Mxw0OUjXL3O2txA_At2_VWsCjQVuWiPbYICGI_PPDe-AoyHoIeuiIC7aCd8MkxmkmruynJWKffi_WpHE43Jm_PTV73hYcxvinaQgGeCfBOudsyRICskN-cC5SjocIkpe_S34kYeWoLCLf4fs2LYwkVWgq-jZmoMiKkh2hAwq_W4JCkAh06Q_eF7fI0hG323eATK1"/>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<h3 class="font-serif text-2xl italic">Sora Park</h3>
+<span class="label-sm text-primary">AMBIENT NOIR</span>
+</div>
+</div>
+<!-- Stats / Quote Area (Asymmetric) -->
+<div class="md:col-span-2 bg-surface-container border-l border-primary/20 p-12 flex flex-col justify-center">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">format_quote</span>
+<blockquote class="font-serif text-3xl italic leading-relaxed text-on-surface mb-8">
+                            "The Nocturnal is where the silence becomes sound. It's the most focused environment I've ever recorded in."
+                        </blockquote>
+<div class="flex gap-12">
+<div>
+<span class="block text-3xl font-serif text-primary">12+</span>
+<span class="label-sm">AWARDED ARTISTS</span>
+</div>
+<div>
+<span class="block text-3xl font-serif text-primary">24/7</span>
+<span class="label-sm">CREATIVE ACCESS</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Glassmorphic Booking CTA -->
+<section class="py-32 relative overflow-hidden">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="max-w-4xl mx-auto px-8 relative z-10 text-center">
+<div class="bg-surface-container/40 backdrop-blur-3xl p-16 border border-primary/10">
+<h2 class="font-serif text-5xl md:text-6xl mb-8">Your session begins at midnight.</h2>
+<p class="text-on-surface-variant mb-12 text-lg">Secure your creative window in our world-class facilities. Limited availability for non-resident artists.</p>
+<button class="bg-primary text-on-primary px-12 py-5 font-bold uppercase tracking-widest text-sm hover:bg-white hover:text-black transition-all">
+                        Check Availability
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-neutral-950 w-full py-16 px-8 border-t border-yellow-500/10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start max-w-screen-2xl mx-auto">
+<div>
+<div class="text-xl font-serif text-yellow-500 mb-6">The Nocturnal</div>
+<p class="text-neutral-500 text-sm max-w-xs leading-relaxed">A sanctuary for the sonic elite. Engineered for the artist, built for the legacy.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<h4 class="font-serif text-yellow-500 mb-6">Navigate</h4>
+<ul class="space-y-4">
+<li><a class="text-neutral-500 hover:text-neutral-300 Manrope text-sm" href="#">Studios</a></li>
+<li><a class="text-neutral-500 hover:text-neutral-300 Manrope text-sm" href="#">Artists</a></li>
+<li><a class="text-neutral-500 hover:text-neutral-300 Manrope text-sm" href="#">Events</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-serif text-yellow-500 mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-neutral-500 hover:text-neutral-300 Manrope text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-neutral-500 hover:text-neutral-300 Manrope text-sm" href="#">Terms of Service</a></li>
+<li><a class="text-neutral-500 hover:text-neutral-300 Manrope text-sm" href="#">Studio Guidelines</a></li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col items-start md:items-end">
+<h4 class="font-serif text-yellow-500 mb-6">Contact</h4>
+<p class="text-neutral-500 text-sm mb-2">curate@thenocturnal.com</p>
+<p class="text-neutral-500 text-sm mb-8">+1 (888) NIGHT-SOUND</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-yellow-500 hover:scale-110 transition-transform cursor-pointer">potted_plant</span>
+<span class="material-symbols-outlined text-yellow-500 hover:scale-110 transition-transform cursor-pointer">graphic_eq</span>
+<span class="material-symbols-outlined text-yellow-500 hover:scale-110 transition-transform cursor-pointer">album</span>
+</div>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto mt-16 pt-8 border-t border-neutral-900 text-center">
+<p class="label-sm text-neutral-500 uppercase tracking-widest text-[0.625rem]">© 2024 THE NOCTURNAL. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+</body></html>
